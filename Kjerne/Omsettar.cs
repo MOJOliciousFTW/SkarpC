@@ -39,6 +39,7 @@ public class Omsettar
         { "avbryt", "break" },
         { "Oppgave", "Task" },
         { "ErTom", "IsNullOrEmpty" },
+        { "ny", "new" },
     };
 
     public static string OmsetSkarpCTilCSharp(string skarpCKode)

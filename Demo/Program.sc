@@ -3,7 +3,7 @@ gruppe Program
     statisk etter kvart Oppgave Hovedfunksjon()
     {
         konstant tekst apiNøkkel = "api-nøkkel-her";
-        variabel openAiTeneste = new OpenAiTeneste(apiNøkkel);
+        variabel openAiTeneste = ny OpenAiTeneste(apiNøkkel);
 
         medan (sann)
         {
