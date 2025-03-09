@@ -1,0 +1,25 @@
+{
+  "name": "skarpc-language-support",
+  "displayName": "SkarpC Language Support",
+  "description": "Adds syntax highlighting for SkarpC",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.98.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "skarpc",
+      "aliases": ["SkarpC", "skarpc"],
+      "extensions": [".sc"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "skarpc",
+      "scopeName": "source.skarpc",
+      "path": "./syntaxes/skarpc.tmLanguage.json"
+    }]
+  }
+}
