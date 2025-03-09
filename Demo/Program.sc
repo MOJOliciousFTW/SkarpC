@@ -1,6 +1,6 @@
-gruppe Program
+ope gruppe Program
 {
-    statisk etter kvart Oppgave Hovedfunksjon()
+    ope statisk etter kvart Oppgave Hovedfunksjon()
     {
         konstant tekst apiNøkkel = "api-nøkkel-her";
         variabel openAiTeneste = ny OpenAiTeneste(apiNøkkel);

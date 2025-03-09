@@ -1,6 +1,6 @@
-class Program
+public class Program
 {
-    static async Task Main()
+    public static async Task Main()
     {
         const string apiNøkkel = "api-nøkkel-her";
         var openAiTeneste = new OpenAiTeneste(apiNøkkel);
