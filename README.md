@@ -13,3 +13,6 @@ Døme med demo-prosjektet:
 - `cd \SkarpC\SkarpCTilCSharp\bin\Release\net9.0\`
 - `skarpc_to_csharp \SkarpC\Demo`
 - Brått så har du i tillegg til .sc-filene i Demo-prosjektet òg .cs-filer du kan kompilere
+
+## Verktøystøtte
+- [https://github.com/tomahg/SkarpC/tree/main/VsCodeSyntaxHighligtingExtension](Syntaks-utheving for Visual Studio Code)

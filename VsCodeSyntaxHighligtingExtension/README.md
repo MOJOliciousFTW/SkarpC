@@ -1,10 +1,10 @@
-# Syntax highlighting for SkarpC
-Extends Visual Studio Code with syntax highlighting for the SkarpC language, using .sc-files.
+# Syntaks-utheving for SkarpC
+Utvidar Visual Studio Code med syntaksutheving for SkarpC-språket, ved bruk av .sc-filer.
 
-In order to build this extenions
+For å byggje denne utvidinga
 
 - `npm install -g @vscode/vsce`
 - `vsce package`
 
-Install extension
+Installer utviding
 - `code --install-extension skarpc-language-support-0.0.1.vsix`
