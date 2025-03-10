@@ -13,7 +13,7 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.skarpc",
-				"match": "\\b(bruk|ope|lukka|låst|gruppe|tom|dersom|elles|for kvar|i|medan|gjør|returner|sann|usann|statisk|prøv|fang|Unntak|Konsoll|Skriv|SkrivLinje|Les|LesLinje|variabel|heltall|tekst|LeggTil|konstant|Hovedfunksjon|etter kvart|avvent|avbryt|Oppgave|ErTom|ny)\\b"
+				"match": "\\b(bruk|ope|lukka|låst|gruppe|tom|dersom|elles|for|for kvar|inni|medan|gjør|returner|sann|usann|statisk|prøv|fang|Unntak|Konsoll|Skriv|SkrivLinje|Les|LesLinje|variabel|heltall|tekst|bokstav|LeggTil|konstant|Hovedfunksjon|etter kvart|avvent|avbryt|Oppgave|ErTom|ny|Gjennomblabar|Rekkje|TilFlere|Lengde|Oppteljing)\\b"
 			}]
 		},
 		"strings": {

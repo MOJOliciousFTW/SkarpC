@@ -1,6 +1,6 @@
 using System.Text.RegularExpressions;
 
-public class Omsettar
+public static class Omsettar
 {
     private static readonly Dictionary<string, string> NøkkelordKopling = new()
     {
@@ -13,7 +13,8 @@ public class Omsettar
         { "dersom", "if" },
         { "elles", "else" },
         { "for kvar", "foreach" },
-        { "i", "in" },
+        { "for", "for"},
+        { "inni", "in" },
         { "medan", "while" },
         { "gjør", "do" },
         { "returner", "return" },
@@ -31,6 +32,7 @@ public class Omsettar
         { "variabel", "var"},
         { "heltall", "int" },
         { "tekst", "string" },
+        { "bokstav", "char"},
         { "LeggTil", "Add" },
         { "konstant", "const" },
         { "Hovedfunksjon", "Main" },
@@ -40,6 +42,11 @@ public class Omsettar
         { "Oppgave", "Task" },
         { "ErTom", "IsNullOrEmpty" },
         { "ny", "new" },
+        { "Gjennomblabar", "Enumerable" },
+        { "Rekkje", "Range" },
+        { "TilFlere", "ToArray" },
+        { "Lengde", "Length"},
+        { "Oppteljing", "Count"}
     };
 
     public static string OmsetSkarpCTilCSharp(string skarpCKode)
