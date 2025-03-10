@@ -10,24 +10,24 @@ ope gruppe OpenAiTeneste
 
     ope OpenAiTeneste(tekst apiNøkkel)
     {
-        _httpKlient = new HttpClient();
+        _httpKlient = ny HttpClient();
         _apiNøkkel = apiNøkkel;
-        _httpKlient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", _apiNøkkel);
+        _httpKlient.DefaultRequestHeaders.Authorization = ny AuthenticationHeaderValue("Bearer", _apiNøkkel);
     }
 
     ope etter kvart Oppgave<tekst> HentSvarFråKunstigIntelligensEtterKvart(tekst leietekst)
     {
-        variabel førespurnadKropp = new
+        variabel førespurnadKropp = ny
         {
             model = "gpt-4o-mini",
-            messages = new[]
+            messages = ny[]
             {
-                new { role = "system", content = "Du er ein tenestevillig assistent." },
-                new { role = "user", content = leietekst }
+                ny { role = "system", content = "Du er ein tenestevillig assistent." },
+                ny { role = "user", content = leietekst }
             }
         };
 
-        variabel jsonInnhald = new StringContent(JsonSerializer.Serialize(førespurnadKropp), Encoding.UTF8, "application/json");
+        variabel jsonInnhald = ny StringContent(JsonSerializer.Serialize(førespurnadKropp), Encoding.UTF8, "application/json");
 
         variabel svar = avvent _httpKlient.PostAsync(_apiUrl, jsonInnhald);
         svar.EnsureSuccessStatusCode();
