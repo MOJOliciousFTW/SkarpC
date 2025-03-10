@@ -11,8 +11,10 @@
         }
 
         // Leit fram alle .sc filer
-        string[] filer = Directory.GetFiles(rotmappe, "*.sc", SearchOption.AllDirectories);
-        if (filer.Length == 0)
+        var filer = Directory.GetFiles(rotmappe, "*.sc", SearchOption.AllDirectories)
+            .Where(fil => !fil.Contains(@"\obj\")).ToList();
+
+        if (filer.Count == 0)
         {
             Console.WriteLine($"Inga .sc filer funne i '{rotmappe}'.");
             return;

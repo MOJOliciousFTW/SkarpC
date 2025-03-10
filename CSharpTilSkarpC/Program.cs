@@ -11,8 +11,10 @@
         }
 
         // Leit fram alle .cs filer
-        string[] filer = Directory.GetFiles(rotmappe, "*.cs", SearchOption.AllDirectories);
-        if (filer.Length == 0)
+        var filer = Directory.GetFiles(rotmappe, "*.cs", SearchOption.AllDirectories)
+            .Where(fil => !fil.Contains(@"\obj\")).ToList();
+
+        if (filer.Count == 0)
         {
             Console.WriteLine($"Inga .cs filer funne i '{rotmappe}'.");
             return;
