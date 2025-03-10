@@ -15,4 +15,4 @@ Døme med demo-prosjektet:
 - Brått så har du i tillegg til .sc-filene i Demo-prosjektet òg .cs-filer du kan kompilere
 
 ## Verktøystøtte
-- [https://github.com/tomahg/SkarpC/tree/main/VsCodeSyntaxHighligtingExtension](Syntaks-utheving for Visual Studio Code)
+- [Syntaks-utheving for Visual Studio Code](https://github.com/tomahg/SkarpC/tree/main/VsCodeSyntaxHighligtingExtension)
