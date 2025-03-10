@@ -28,7 +28,7 @@
                 string omsettKode = Omsettar.OmsetSkarpCTilCSharp(startKode);
                 File.WriteAllText(målBane, omsettKode);
 
-                Console.WriteLine($"Omsett '{fil}' → '{målBane}'");
+                Console.WriteLine($"Omsett '{fil}' => '{målBane}'");
             }
             catch (Exception unntak)
             {
