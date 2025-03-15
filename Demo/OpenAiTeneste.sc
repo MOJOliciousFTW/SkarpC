@@ -1,6 +1,6 @@
-bruk System.Net.Http.Headers;
-bruk System.Text;
-bruk System.Text.Json;
+bruk Standardbibliotek.Nett.LenkeTekstOverføringsProtokoll.Haud;
+bruk Standardbibliotek.Tekst;
+bruk Standardbibliotek.Tekst.JavaScriptObjektNemning;
 
 ope gruppe OpenAiTeneste
 {

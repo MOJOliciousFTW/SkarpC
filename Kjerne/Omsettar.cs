@@ -46,7 +46,12 @@ public static class Omsettar
         { "Rekkje", "Range" },
         { "TilFlere", "ToArray" },
         { "Lengde", "Length"},
-        { "Oppteljing", "Count"}
+        { "Oppteljing", "Count"},
+        { "Standardbibliotek.Spørjingar", "System.Linq"},
+        { "Standardbibliotek.Nett.LenkeTekstOverføringsProtokoll.Haud", "System.Net.Http.Headers" },
+        { "Standardbibliotek.Tekst.JavaScriptObjektNemning", "System.Text.Json" },
+        { "Standardbibliotek.Tekst", "System.Text" },
+        { "Standardbibliotek", "System"}
     };
 
     public static string OmsetSkarpCTilCSharp(string skarpCKode)
