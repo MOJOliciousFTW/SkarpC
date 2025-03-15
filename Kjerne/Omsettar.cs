@@ -51,7 +51,11 @@ public static class Omsettar
         { "Standardbibliotek.Nett.LenkeTekstOverføringsProtokoll.Haud", "System.Net.Http.Headers" },
         { "Standardbibliotek.Tekst.JavaScriptObjektNemning", "System.Text.Json" },
         { "Standardbibliotek.Tekst", "System.Text" },
-        { "Standardbibliotek", "System"}
+        { "Standardbibliotek", "System"},
+        { "Microsoft.Utvidelser.Oppsett", "Microsoft.Extensions.Configuration"},
+        { "LeggTilJsonFil", "AddJsonFile"},
+        { "OppsettsByggjar", "ConfigurationBuilder"},
+        { "Bygg", "Build"},
     };
 
     public static string OmsetSkarpCTilCSharp(string skarpCKode)

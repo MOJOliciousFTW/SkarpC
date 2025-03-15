@@ -1,9 +1,14 @@
+bruk Microsoft.Utvidelser.Oppsett;
+
 ope gruppe Program
 {
     ope statisk etter kvart Oppgave Hovedfunksjon()
     {
-        konstant tekst apiNøkkel = "api-nøkkel-her";
-        variabel openAiTeneste = ny OpenAiTeneste(apiNøkkel);
+        variabel oppsett = ny OppsettsByggjar()
+            .LeggTilJsonFil("oppsett.json")
+            .Bygg();
+
+        variabel openAiTeneste = ny OpenAiTeneste(oppsett["Nøkkel"] ?? "");
 
         medan (sann)
         {

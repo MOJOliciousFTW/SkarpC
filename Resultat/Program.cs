@@ -1,9 +1,14 @@
+using Microsoft.Extensions.Configuration;
+
 public class Program
 {
     public static async Task Main()
     {
-        const string apiNøkkel = "api-nøkkel-her";
-        var openAiTeneste = new OpenAiTeneste(apiNøkkel);
+        var oppsett = new ConfigurationBuilder()
+            .AddJsonFile("oppsett.json")
+            .Build();
+
+        var openAiTeneste = new OpenAiTeneste(oppsett["Nøkkel"] ?? "");
 
         while (true)
         {
