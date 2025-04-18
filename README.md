@@ -16,3 +16,23 @@ Døme med demo-prosjektet:
 
 ## Verktøystøtte
 - [Syntaks-utheving for Visual Studio Code](https://github.com/tomahg/SkarpC/tree/main/VsCodeSyntaxHighligtingExtension)
+
+# Utviklarhaldar
+
+Benytt utviklarhaldar til å utforske i koderom.
+
+Opne eit GjevNav koderom:
+![alt text](image.png)
+
+Kjøyr fylgjande i kommandolinja
+
+```yaml
+dotnet build SkarpCTilCSharp/
+
+SkarpCTilCSharp/bin/Debug/net9.0/skarpc_to_csharp Demo
+```
+
+Om du likar påskenete, kanskje legg koden din i `Demo/Program.sc` fysst.
+
+Til slutt, opne `Demo\Program.cs` og trykk på spel knappen.
+![alt text](image-1.png)
