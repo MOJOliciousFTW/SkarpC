@@ -8,5 +8,5 @@
             ]
         }
     },
-  "postCreateCommand": "dotnet restore"
+  "postCreateCommand": "code --install-extension VsCodeSyntaxHighligtingExtension/download/skarpc-language-support-0.0.1.vsix"
 }
