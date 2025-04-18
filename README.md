@@ -24,7 +24,7 @@ Benytt utviklarhaldar til å utforske i koderom.
 Opne eit GjevNav koderom:
 ![alt text](image.png)
 
-Kjøyr fylgjande i kommandolinja
+Gjer vel og køyr fylgjande i kommandolinja
 
 ```yaml
 dotnet build SkarpCTilCSharp/
